@@ -1,0 +1,149 @@
+:root{
+    --gray: #333;
+    --yellow: #F4DD61;
+	--blue: #4CB6D9;
+	--bg: #f8fafc;
+}
+.ef-hover-2 {
+    height: 22rem;
+    background-color: var(--blue);
+    overflow: hidden;
+	
+}
+.grid-title{
+	height: 22rem;
+    overflow: hidden;
+}
+.grid-title h2{
+	margin-top: 50%;
+	color: var(--yellow);
+	width: 50%;
+	font-weight: bold;
+	border-right: 2px var(--yellow) solid;
+}
+
+/* parte 1 del efecto */
+.ef-hover-2 .img-title{
+	position: absolute;
+	top: 50%;
+	color: #333;
+	width: 100%;
+	z-index: 111;
+}
+.ef-hover-2 .img-title h4{
+	margin: auto;
+	width: 80%;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 2px var(--yellow) solid;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+}
+.ef-hover-2 .img-title p{
+	text-align: center;
+}
+
+.ef-hover-2 figure{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	filter: sepia(.2);
+}
+.ef-hover-2 figure img{
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.ef-hover-2 .imgBx,
+.ef-hover-2 .details {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: .5s ease-in-out;
+}
+.ef-hover-2 .imgBx {
+    top: 0;
+    left: 0;
+}
+.ef-hover-2 .imgBx img {
+    width: 100%;
+}
+
+/* parte 2 */
+.ef-hover-2 .details {
+    top: 0;
+    left: 100%;
+}
+.ef-hover-2 .txt{
+	position: absolute;
+	top: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 30%;
+
+}
+
+.ef-hover-2 .details .txt h2 {
+    color: #333;
+    text-align: center;
+	width: 80%;
+    margin: 0 auto 0 auto;
+    padding: 0 0 10px;
+    border-bottom: 2px solid var(--yellow);
+
+}
+.ef-hover-2 .details .txt p {
+    text-align: center;
+	padding: 20px;
+    color: #333;
+}
+.ef-hover-2 .bg-img{
+	position: absolute;
+	top: 0;
+	margin: 0;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	filter: blur(10px);
+}
+
+/* efectos hover */
+.ef-hover-2:hover .imgBx {
+    top: 0;
+    left: -100%;
+}
+
+.ef-hover-2:hover .details {
+    top: 0;
+    left: 0%;
+	padding: 0;
+}
+
+@media (max-width: 985px) {
+	.hide-box {
+	  display: none;
+	}
+  }
+@media (max-width: 767px) {
+	.grid-title{
+		height: 11rem;
+	}
+	.grid-title h2{
+		overflow: hidden;
+		color: var(--yellow);
+		width: 80%;
+		border-right: none;
+		border-bottom: 2px var(--yellow) solid;
+		text-align: center;
+		padding-bottom: 1rem;
+		margin: 10% auto;
+	}
+  }
+.fix-row-cards{
+	margin: auto;
+}
